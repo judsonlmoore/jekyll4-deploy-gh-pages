@@ -9,7 +9,7 @@ BUNDLE_BUILD__SASSC=--disable-march-tune-native
 
 echo "Installing gems..."
 
-bundle config path vendor/bundle
+# bundle config path vendor/bundle
 bundle install --jobs 4 --retry 3
 
 echo "Building Jekyll site..."
