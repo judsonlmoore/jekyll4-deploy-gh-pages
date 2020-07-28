@@ -26,7 +26,3 @@ git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 git add .
 git commit -m "published by GitHub Actions"
 git push --force ${REPO} master:${BRANCH}
-
-echo "Indexing search"
-
-ALGOLIA_API_KEY='${{ secrets.ALGOLIA_API_KEY }}' bundle exec jekyll algolia
